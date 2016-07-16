@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FizzBuzz Javascript method</title>
+</head>
+<body>
+
+<h1>FIZZ BUZZ</h1>
+
+<p>Please go to inspect element to find my Fizzbuzz method in action.</p>
+
+<script>
+
+//The for loop here will add 1 to the variable i untill i equals 100.
+//The for loop will log each number in the fizzBuzz function
+for (var i = 1; i <= 100; i++) {
+  console.log(fizzBuzz(i));
+}
+	
+//The fizzBuzz function to print every number divisible by 3 as "Fizz", every number
+//divisible by 5 as "Buzz", every number divisible by both 3 and 5 to print "Fizzbuzz"
+//and if the number is not divisible by either 3 nor 5, print the numbers going up by 1. 
+function fizzBuzz(number) {
+  if (number % 3 === 0) {
+    return "Fizz";
+  }
+  else if (number % 5 === 0) {
+    return "Buzz";
+  }
+  else if (number % 3 === 0 && number % 5 === 0 ) {
+    return "FizzBuzz";
+  }else{
+  	return(number);
+  } 
+   
+};
+</script>
+</body>
+</html>
