@@ -24,15 +24,25 @@ for (var i = 1; i <= 100; i++) {
 //NOTE: It gets the numbers 1,2 etc from the paramater number which is being replaced by i in the for loop. 
 function fizzBuzz(number) {
   
+  //If condition if var i/the number is disivible by 3 or 5.
+  //this will need to be first otherwise will only ask if divisible by 3 and disivible by 5. Not 
+  //divisible by 3 or 5.
   if (number % 3 === 0 && number % 5 === 0 ) {
     return "FizzBuzz";
   }
+
+  //Checks if var i/number is divisible by 3
   else if (number % 3 === 0) {
     return "Fizz";
   }
+
+  //Checks if var i/number is divisible by 5  
   else if (number % 5 === 0) {
     return "Buzz";
-  }else{
+  }
+
+  //if number is not divisible by any and still has a remainder then return the number
+  else{
     return(number);
   } 
    
